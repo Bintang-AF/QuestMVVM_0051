@@ -19,6 +19,20 @@ fun TampilSiswa(
     statusUiSiswa: Siswa,
     onBackButtonClicked: () -> Unit
 ) {
+    val items = listOf(
+        Pair(
+            stringResource(R.string.nama),
+            statusUiSiswa.nama
+        ),
+        Pair(
+            stringResource(R.string.gender),
+            statusUiSiswa.gender
+        ),
+        Pair(
+            stringResource(R.string.alamat),
+            statusUiSiswa.alamat
+        )
+    )
 
     Scaffold(
         topBar = {
