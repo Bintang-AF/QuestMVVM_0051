@@ -66,7 +66,27 @@ fun TampilSiswa(
                 )
             ) {
 
-                // Data siswa ditambahkan berikutnya
+                items.forEach { item ->
+
+                    Column {
+                        Text(
+                            item.first.uppercase(),
+                            fontSize = 16.sp
+                        )
+
+                        Text(
+                            text = item.second,
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 16.sp
+                        )
+                    }
+
+                    HorizontalDivider(
+                        thickness = dimensionResource(
+                            R.dimen.thickness_divider
+                        )
+                    )
+                }
 
             }
         }
