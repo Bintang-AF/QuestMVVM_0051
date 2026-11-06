@@ -1,4 +1,4 @@
-<resources>>
+<resources>
     <string name="app_name">Form Pendaftaran</string>
     <string name="laki">Laki-laki</string>
     <string name="wanita">Perempuan</string>
@@ -9,3 +9,4 @@
     <string name="gender">Jenis Kelamin</string>
     <string name="detail">Data Siswa</string>
 </resources>
+
