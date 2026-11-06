@@ -16,3 +16,39 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.prak8.R
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun FormSiswa(
+    pilihanJK: List<String>,
+    onSubmitButtonClicked: (MutableList<String>) -> Unit,
+    modifier: Modifier = Modifier
+) {
+
+    Scaffold(
+        modifier = modifier,
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = stringResource(R.string.app_name),
+                        color = Color.White
+                    )
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = colorResource(R.color.purple_500)
+                )
+            )
+        }
+    ) { isiRuang ->
+
+        Column(
+            modifier = Modifier.padding(isiRuang),
+            verticalArrangement = Arrangement.SpaceBetween,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+            // Komponen form ditambahkan di commit berikutnya
+
+        }
+    }
+}
